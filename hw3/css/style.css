@@ -148,7 +148,6 @@ body{
 .bmenu__link:last-child{
   display: block;
   left: 100px;
-  /*padding-left: 140px;*/
 }
 .copyright{
   display: block;
@@ -160,5 +159,4 @@ body{
   line-height: 40px;
   right: 40px;
   top: 0px;
-
 }
