@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background:  url(../img/bg.jpg) top center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  font-family: Tahoma, Arial, sant-serif;
+}
+.clearfix:after{
+  display: block;
+  clear: both;
+  content: '';
+}
+.header{
+  margin: 55px auto 0;
+  width: 820px;
+  position: relative;
+  /*height: 100px;*/
+  /*background-color: grey;*/
+}
+.leftlogo{
+  float: left;
+  width: 263px;
+  height: 147px;
+  background: url(../img/logo-bg.png) 140px 0 no-repeat;
+}
+.logo__img{
+  padding-top: 25px;
+}
+.logo__link{
+  margin-top: 25px;
+  display: block;
+}
+.logo__text{
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
+.rightcontacts{
+  margin-top: 90px;
+  color: white;
+  float: right;
+}
+.contact{
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.contact__text{
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 8px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.contact__link{
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 8px;
+  line-height: 9px;
+}
+.firstline{
+  float: left;
+  width: 820px;
+  margin-bottom: 48px;
+}
+.firstline__item:first-child{
+  margin-right: 10px;
+}
+.firstline__item:last-child{
+  margin-left: 10px;
+}
+.firstline__item{
+  display: inline-block;
+  width: 262px;
+  vertical-align: top;
+  text-align: center;
+  color: white;
+}
+.firstline__img{
+  display:  block;
+  border: 3px solid #aaaaaa;
+  -webkit-box-shadow: inset 0px 0px 30px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 30px 2px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 30px 2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.75);
+}
+.image{
+  margin: 0 auto;
+  width: 820px;
+}
+.copyright{
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  font-size:  10px;
+  color: white;
+  margin: 0 auto;
+}
