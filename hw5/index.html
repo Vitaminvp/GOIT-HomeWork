@@ -10,7 +10,7 @@
 <body>
   <div class="wrapper">
 
-      <div class="header clearfix">
+      <div class="header">
         <a href="#" class="header__button">Ola! <span>Entrar</span> ou <span>Cadastre-se</span></a>
         <a href="#" class="header__text">Minhas Ofertas</a>
         <ul class="header__menu">
@@ -21,40 +21,43 @@
           <li class="header__item"><a href="#" class="header__link">Meu YouBike</a></li>
         </ul>
       </div>
-      <div class="content clearfix">
 
-            <div class="form1">
-              <h1 class="logo">
-                <p>Cadastre-se</p>
-              </h1>
-            </div>
-            <div class="form2">
-                <div class="facebook clearfix">
-                  <a href="#" class="facebook__link clearfix"><div class="f">f</div><div class="login">Log in <span>with </span> Facebook</div>&nbsp;  &gt;</a>
-                </div>
-                <div class="hline">OU</div>
-                <div class="forms">
-                  <form action="">
-                    <input type="text" name="name" class="name" placeholder="   First Name" required="required">
-                    <input type="text" name="lname" class="lname" placeholder="   Last Name">
-                    <input type="email" name="email" class="email" placeholder="   Email Address" required="required">
-                    <input type="password" name="" class="password" placeholder="   Choose Password" required="required">
-                    <input type="password" name="" class="password2" placeholder="   Password Confirm" required="required">
-                    <input type="checkbox" id="checkbox" class="checkbox">
-                    <label for="checkbox" class="checkbox__label">Send me Youbike updates and tips</label>
-                    </input>
-                    <div>
-                      <input type="submit" class="submit" value="Create my Account">
-                    </div>
-                    <div class="footer__text">
-                      By clicking the button above, you agree to the Terms of Service<br>
-Xiew our Privacy Policy.
-                    </div>
-                  </form>
-                </div>
-            </div>
-      </div>
+          <div class="wrapper__form">
+                      <div class="form1">
+                        <h1 class="logo">
+                          <p>Cadastre-se</p>
+                        </h1>
+                      </div>
+                      <div class="form2">
 
-</div>
+
+                                <div class="forms" >
+                                    <form action="#">
+                                      <button type="button"  class="facebook__link" name="button"><div class="f">f</div><div class="login">Log in <span>with </span> Facebook</div>&nbsp;  &gt;</button>
+                                      <fieldset class="fieldset__form">
+                                        <legend> OU </legend>
+                                        <input type="text" name="name" class="name" placeholder="   First Name" required="required">
+                                        <input type="text" name="lname" class="lname" placeholder="   Last Name">
+                                        <input type="email" name="email" class="email" placeholder="   Email Address" required="required">
+                                        <input type="password" name="" class="password" placeholder="   Choose Password" required="required">
+                                        <input type="password" name="" class="password2" placeholder="   Password Confirm" required="required">
+                                        <input type="checkbox" id="checkbox" class="checkbox">
+                                        <label for="checkbox" class="checkbox__label">Send me Youbike updates and tips</label>
+                                        </input>
+                                        <div>
+                                          <button type="button" class="submit" name="button">Create my Account</button>
+                                          <!-- <input type="submit" class="submit" value="Create my Account"> -->
+                                        </div>
+                                       </fieldset>
+                                     </form>
+                                    <div class="footer__text">
+                                      By clicking the button above, you agree to the Terms of Service<br>
+                                      Xiew our Privacy Policy.
+                                    </div>
+                                </div>
+                        </div>
+            </div>
+
+    </div>
 </body>
 </html>
