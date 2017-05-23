@@ -149,6 +149,7 @@
   width: 30px;
   margin-top: -21px;
   background: url(../img/arrow.png) 0 0 no-repeat;
+  z-index: 10;
 }
 .slider__arrows--left{
   left: 0px;

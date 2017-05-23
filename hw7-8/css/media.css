@@ -142,6 +142,15 @@
     right: 50px;
     background: url(../img/iphone1.png) top right no-repeat;
   }
+  .slider__items--bottom::after{
+    content: '';
+    width: 429px;
+    height: 23px;
+    background:  url(../img/corner.png) bottom right no-repeat;
+    bottom: -23px;
+    right: 40px;
+    position: absolute;
+  }
   .slider__buttons{
     bottom: -190px;
   }
@@ -218,6 +227,15 @@
     top: -112px;
     right: 50px;
     background: url(../img/iphone1.png) top right no-repeat;
+  }
+  .slider__items--bottom::after{
+    content: '';
+    width: 429px;
+    height: 23px;
+    background:  url(../img/corner.png) bottom right no-repeat;
+    bottom: -23px;
+    right: 40px;
+    position: absolute;
   }
   .slider__buttons{
     bottom: -253px;
