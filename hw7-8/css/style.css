@@ -1,0 +1,445 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*GLOBAL*/
+@font-face {
+    font-family: 'League Gothic Regular';
+    src: url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.wrapper{
+  position: relative;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 960px;
+}
+.clearfix::after{
+  display: block;
+  content: '';
+  clear: both;
+  width: 100%;
+  height: 0px;
+}
+
+/*HEADER*/
+.header{
+  padding-bottom: 160px;
+  border-bottom: 1px solid #34263b;
+  background:  url(../img/bg.jpg) top center no-repeat;
+  background-size: cover;
+}
+.logo{
+  /*margin: 0 auto;*/
+  display: block;
+  width: 152px;
+  padding-top: 70px;
+  text-align: center;
+}
+.logo__img{
+  display: block;
+}
+/*.menu--mobile{
+  display: none;
+}*/
+.menu{
+  border-radius: 8px;
+  list-style: none;
+}
+.menu--mobile, .menu--footer{
+  /*position: relative;*/
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  /*overflow: hidden;
+  background: rgba(54, 41, 62,  0.9);
+  border: 1px solid #051116;
+  text-align: center;*/
+}
+.menu__items{
+  /*float: left;*/
+  margin-right: 20px;
+}
+.menu__items:last-child{
+  margin-right: 0px;
+}
+/*.menu--mobile .menu__items{
+  margin-right: 0;
+  float:  none;
+  border-top: 1px solid #523f5a;
+  border-bottom: 1px solid #36283e;
+}
+.menu--mobile .menu__items:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.menu--mobile .menu__items:last-child{
+  border-bottom: none;
+}
+.menu--mobile .menu__items:first-child{
+  border-top: none;
+}*/
+
+.menu__items--current .menu__link{
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+  border-bottom: 2px solid #edbfff;
+}
+.menu__link, .current__item-link{
+  padding: 0 6px;
+  color: white;
+  font-size: 24px;
+  line-height: 39px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'League Gothic Regular', Arial, sans-serif;
+}
+.current__item{
+  text-align: center;
+  padding-top: 1px;
+}
+.current__item-link{
+  border-bottom: 2px solid #edbfff;
+}
+.menu__link:hover{
+  border-bottom: 2px solid #edbfff;
+}
+.menu__wrapper{
+  position: relative;
+  margin-top: 22px;
+}
+
+
+/*SLIDER*/
+.slider{
+  position: relative;
+  margin-top: 115px;
+  padding: 0 25px;
+  /*text-align: center;*/
+  font-family: 'League Gothic Regular', Arial, sans-serif;
+}
+.slider__items{
+  margin: 0 auto;
+  padding: 0 60px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+
+}
+.slider__text1{
+  color: #fefefe;
+  font-size: 36px;
+}
+.slider__text2{
+  font-size: 18px;
+  color: #edbfff;
+  text-transform: uppercase;
+}
+.slider__text3{
+  width: 280px;
+  font-size: 16px;
+  color: white;
+  font-family: "Open Sans", Arial, sans-serif;
+  text-align: justify;
+}
+.slider__arrows{
+  position: absolute;
+  top: 50%;
+  height: 42px;
+  width: 30px;
+  margin-top: -21px;
+  background: url(../img/arrow.png) 0 0 no-repeat;
+}
+.slider__arrows--left{
+  left: 0px;
+}
+.slider__arrows--right{
+  right: 0px;
+  background-position: -31px 0;
+}
+.slider__buttons{
+  position: absolute;
+  width: 100%;
+     bottom: -91px;
+  margin-left: -25px;
+  list-style: none;
+  text-align: center;
+}
+.slider__buttons li{
+  display: inline-block;
+  margin: 0 2px;
+  border-radius: 100%;
+  width: 16px;
+  height: 16px;
+  background-color:  rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.slider__buttons li.current:before{
+  content: '';
+  display: block;
+  margin: 3px;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fdfdfd+0,dedede+100 */
+  background: #fdfdfd; /* Old browsers */
+  background: -moz-linear-gradient(top,  #fdfdfd 0%, #dedede 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #fdfdfd 0%,#dedede 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #fdfdfd 0%,#dedede 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#dedede',GradientType=0 ); /* IE6-9 */
+}
+/*slider--content*/
+.slider--content{
+  margin-top: 0;
+  padding: 0 20px;
+}
+.slider--content .slider__items{
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(239, 239, 239, 1);
+  -moz-box-shadow:    0px 1px 0px 0px rgba(239, 239, 239, 1);
+  box-shadow:         0px 1px 0px 0px rgba(239, 239, 239, 1);
+}
+.slider--content .slider__items{
+  position: relative;
+  margin: 0 0 0 24px;
+  padding: 24px 30px 30px 36px;
+  background-color: #fff;
+
+}
+.slider--content .slider__buttons{
+  position: relative;
+  bottom: auto;
+  margin: 23px 0 0 14px;
+}
+.slider--content .slider__buttons li{
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+}
+.slider--content .slider__buttons li:before{
+  background: #6a6a6a; /* Old browsers */
+  background: -moz-linear-gradient(top,  #6a6a6a 0%, #454545 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #6a6a6a 0%,#454545 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #6a6a6a 0%,#454545 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a6a6a', endColorstr='#454545',GradientType=0 ); /* IE6-9 */
+}
+ .slider--content .slider_image{
+   position: absolute;
+   top: 18px;
+   left: -25px;
+ }
+.slider__title{
+  color: #454545;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: 'League Gothic Regular', Arial, sans-serif;
+}
+.slider__title span{
+  display: block;
+  color: #edbfff;
+}
+.slider__text{
+  margin-top: 5px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 16px;
+}
+.updates{
+  padding: 0 20px;
+}
+.updates__titles{
+
+}
+.updates__items{
+  margin-bottom: 15px;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+.updates__img{
+  float: left;
+  margin-right: 16px;
+}
+.updates__titles{
+  margin-bottom: 20px;
+  color: #454545;
+  font-size: 30px;
+  font-family: 'League Gothic Regular', Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.updates__subtitle{
+  font-weight: 800;
+}
+.updates__link{
+  float: right;
+  margin-top: 10px;
+  color: #454545;
+  font-family: 'League Gothic Regular', Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: normal;
+  text-align: right;
+}
+/*ABOUTSECTION*/
+.about__section{
+  padding-top: 70px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #12191f;
+  background: #745083; /* Old browsers */
+  background: -moz-linear-gradient(top,  #745083 0%, #322539 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #745083 0%,#322539 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #745083 0%,#322539 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', endColorstr='#322539',GradientType=0 ); /* IE6-9 */
+}
+.about{
+  position: relative;
+  /*overflow: hidden;*/
+  margin: 0 20px 30px;
+  padding-left: 60px;
+  color: white;
+  font-family: 'League Gothic Regular', Arial, sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+.about__title{
+  font-size: 24px;
+  font-weight: normal;
+}
+.about__text{
+  font-size: 16px;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+.about__link{
+  float: right;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+.about__link:hover{
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+}
+.about:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 30px;
+  height: 31px;
+  background:  url(../img/icons.png) 0 0 no-repeat;
+}
+.about--1::before{
+   width: 30px;
+}
+.about--2::before{
+   width: 33px;
+   background-position: -31px 0;
+}
+.about--3::before{
+   width: 29px;
+   background-position: -65px 0;
+}
+/*DESCRIPTION*/
+.description{
+  padding-bottom: 88px;
+  padding-top: 70px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e6e6e6;
+}
+/*SPONSORS*/
+.sponsors{
+  padding: 52px 0 15px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #fefefe;
+  border-bottom: 1px solid #d8d8d8;
+}
+.sponsors .wrapper{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.sponsor__link{
+  margin-bottom: 55px;
+  width: 50%;
+  /*display: block;
+  text-align: center;
+  float: left;*/
+}
+.sponsor__link:hover{
+  position: relative;
+  top: 2px;
+  left: 2px;
+
+}
+/*PREFOOTER*/
+.prefooter{
+  padding: 80px 0 90px;
+  background-color: #ececec;
+}
+.category{
+  margin-bottom: 54px;
+  padding: 0 20px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
+}
+.category__title{
+  margin-bottom: 10px;
+  color: #454545;
+  font-family: 'League Gothic Regular', Arial, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.category-first{
+  display: none;
+}
+.category-second{
+  display: none;
+}
+.category__title-first{
+  font-size: 48px;
+  color: #454545;
+  font-family: 'League Gothic Regular', Arial, sans-serif;
+}
+.category__title-first span{
+  color: #b9b9b9;
+}
+.category__copyright{
+  color: #c5c5c5;
+  /*line-height: 50px;*/
+  padding-bottom: 10px;
+  font-weight: normal;
+  font-family: Georgia, Arial, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+.category__text{
+  color: #787878;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+}
+/*FOOTER*/
+.footer{
+  padding-top: 45px;
+  background:  url(../img/bg_footer.jpg) top center no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+.copyrights{
+  padding-top: 40px;
+  padding-right: 20px;
+  color: white;
+  font-family: "Open Sans", Arial, sans-serif;
+  text-align: center;
+  font-size: 12px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+.copyrights a{
+  font-weight: 800;
+  text-decoration: none;
+  color: white;
+}
+/*.menu--footer{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}*/

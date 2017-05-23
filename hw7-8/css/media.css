@@ -1,0 +1,275 @@
+@media (max-width: 480px){
+  .wrapper{
+    max-width: 480px;
+  }
+  .logo{
+    margin: 0 auto;
+  }
+  /*MENU--MOBILE*/
+  .menu__wrapper:hover .menu{
+    display: block;
+  }
+  .menu__wrapper:hover .current__item{
+    opacity: 0;
+    /*display: none;*/
+  }
+  .menu--mobile{
+    display: none;
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    z-index: 1;
+
+    /*position: relative;*/
+    overflow: hidden;
+    background: rgba(54, 41, 62,  0.9);
+    border: 1px solid #051116;
+    text-align: center;
+  }
+  .menu--mobile .menu__items{
+    margin-right: 0;
+    float:  none;
+    border-top: 1px solid #523f5a;
+    border-bottom: 1px solid #36283e;
+  }
+  .menu--mobile .menu__items:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .menu--mobile .menu__items:last-child{
+    border-bottom: none;
+  }
+  .menu--mobile .menu__items:first-child{
+    border-top: none;
+  }
+  /*MENU--MOBILE*/
+  .slider__text3{
+    display: none;
+  }
+  .menu--footer{
+    display: none;
+  }
+  .prefooter{
+    display: none;
+  }
+}
+@media (max-width: 767px){
+  .wrapper{
+    max-width: 768px;
+  }
+  .logo{
+    margin: 0 auto;
+  }
+  /*MENU--MOBILE*/
+  .menu__wrapper:hover .menu{
+    display: block;
+  }
+  .menu__wrapper:hover .current__item{
+    opacity: 0;
+    /*display: none;*/
+  }
+  .menu--mobile{
+    display: none;
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    z-index: 1;
+
+    /*position: relative;*/
+    overflow: hidden;
+    background: rgba(54, 41, 62,  0.9);
+    border: 1px solid #051116;
+    text-align: center;
+  }
+  .menu--mobile .menu__items{
+    margin-right: 0;
+    float:  none;
+    border-top: 1px solid #523f5a;
+    border-bottom: 1px solid #36283e;
+  }
+  .menu--mobile .menu__items:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .menu--mobile .menu__items:last-child{
+    border-bottom: none;
+  }
+  .menu--mobile .menu__items:first-child{
+    border-top: none;
+  }
+  /*MENU--MOBILE*/
+  .slider__text3{
+    display: none;
+  }
+  .sponsor__link{
+    width: 33%;
+  }
+}
+@media (min-width: 768px) and (max-width: 960px){
+  .wrapper{
+    max-width: 960px;
+  }
+  .header{
+    padding-bottom: 270px;
+  }
+  .header::after{
+    content: '';
+    position: absolute;
+    top: 200px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 400px;
+  }
+  .logo{
+    padding-left: 20px;
+  }
+  .current__item{
+    display: none;
+  }
+  .menu__wrapper{
+    margin-bottom: 120px;
+  }
+  .menu--mobile, .menu--footer{
+    justify-content: flex-start;
+    padding-left: 16px;
+  }
+  .slider--top::before{
+    content: '';
+    position: absolute;
+    width: 267px;
+    height: 434px;
+    top: -112px;
+    right: 50px;
+    background: url(../img/iphone1.png) top right no-repeat;
+  }
+  .slider__buttons{
+    bottom: -190px;
+  }
+  .slider__text3{
+    width: 300px;
+  }
+  .about__section>.wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  .about{
+    width: 33%;
+  }
+  .description .wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  .slider--content{
+    width: 48%;
+  }
+  .updates{
+    width: 48%;
+  }
+  .sponsor__link{
+    width: 15%;
+  }
+  .category{
+    width: 33%;
+  }
+  .prefooter>.wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu--footer{
+    justify-content: flex-start;
+  }
+  .copyrights{
+    text-align: right;
+  }
+}
+@media (min-width: 960px){
+  .wrapper{
+    max-width: 960px;
+  }
+  .header{
+    padding-bottom: 333px;
+  }
+  .header::after{
+    content: '';
+    position: absolute;
+    top: 200px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 400px;
+  }
+  .logo{
+    padding-left: 20px;
+  }
+  .current__item{
+    display: none;
+  }
+  .menu__wrapper{
+    margin-bottom: 180px;
+}
+  .menu--mobile{
+    justify-content: flex-end;
+    margin-top: -60px;
+  }
+  .slider--top::before{
+    content: '';
+    position: absolute;
+    width: 267px;
+    height: 434px;
+    top: -112px;
+    right: 50px;
+    background: url(../img/iphone1.png) top right no-repeat;
+  }
+  .slider__buttons{
+    bottom: -253px;
+  }
+  .slider__text3{
+    width: 500px;
+  }
+  .about__section>.wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  .about{
+    width: 33%;
+  }
+  .description>.wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  .slider--content{
+    width: 48%;
+  }
+  .updates{
+    width: 48%;
+  }
+  .sponsor__link{
+    width: 15%;
+  }
+  .category{
+    width: 33%;
+  }
+  .category-first{
+    display: block;
+  }
+  .category-second{
+    display: block;
+  }
+  .category-third{
+    display: none;
+  }
+  .category:last-child{
+    display: none;
+  }
+  .prefooter>.wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu--footer{
+    justify-content: flex-start;
+  }
+  .copyrights{
+    margin-top: -25px;
+    padding-top: 0;
+    text-align: right;
+  }
+}
