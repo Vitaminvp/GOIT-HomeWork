@@ -2,8 +2,8 @@ function myArr() {
   var arrey = [];
   for (var i=0; i < 5; i++) {
     arrey[i] = prompt('Введите '+(i+1)+'-й елемент массива.' );
-    if (arrey[i] == '') {
-      arrey[i] = prompt('Нужно чтото ввести.' );
+    if ( (arrey[i] == '') || (arrey[i] == null) ) {
+      arrey[i] = prompt('Нужно что-то ввести.' );
     }
   }
   return arrey;
@@ -14,7 +14,7 @@ var arr = myArr();
 function compare(name) {
   for (var i = 0; i < arr.length; i++) {
     var enter;
-      if ( (arr[i] == name) & (arr[i] !==  '') ) {
+      if ( (arr[i] == name) && (arr[i] !==  '') ) {
         enter = true;
         break;
       } else {
