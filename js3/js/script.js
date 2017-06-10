@@ -10,7 +10,6 @@ var programmingTest = {
     div.style.border = '1px solid black';
     div.style.textAlign  = 'center';
     parentElement.appendChild(div);
-    // parentElement.insertBefore(div,null);
   },
   createForm: function() {
     form = document.createElement('form');
@@ -18,42 +17,37 @@ var programmingTest = {
     div.appendChild(form);
   },
   createUl: function() {
-    ol = document.createElement('ol');
+    var ol = document.createElement('ol');
     ol.className = 'order__list';
     form.appendChild(ol);
     for (var i = 1; i <= 3; i++) {
-      li = document.createElement('li');
+      var li = document.createElement('li');
       li.className = 'order__item';
-      li.innerHTML = '<h3>Вопрос №' + i + '</h3>';
-      li.querySelector('h3').style.fontWeight = 'normal';
-      li.style.textAlign = 'left';
+      var div2 = document.createElement('div');
+      li.appendChild(div2);
+      div2.innerHTML = '<h3>Вопрос №' + i + '</h3>';
+      div2.querySelector('h3').style.fontWeight = 'normal';
+      div2.style.textAlign = 'left';
       ol.appendChild(li);
       for (var j = 1; j <= 3; j++ ) {
-        label = document.createElement('label');
-        input = document.createElement('input');
-        // text = document.createTextNode('Вариант ответа №' +j);
-        // console.log(text);
-        input.style.display = 'block';
-        label.innerHTML = 'Вариант ответа №' +j;
-        // input.style.background = '#cfe2f3';
-        // input.style.border = '1px solid black';
+        var label = document.createElement('label');
+        var input = document.createElement('input');
+        label.style.display = 'block';
+        div2.appendChild(label);
         input.setAttribute('type', 'checkbox');
-        // label.setAttribute('for', '');
-        li.appendChild(input);
-        input.appendChild(label);
-        // label.appendChild(text);
+        label.appendChild(input);
+        label.appendChild(document.createTextNode('Вариант ответа №' + j));
       }
     }
   },
   createButton: function() {
-    button = document.createElement('button');
+    var button = document.createElement('button');
     button.innerHTML = 'Проверить мои результаты';
     button.style.background = '#cfe2f3';
     button.style.lineHeight = '50px';
     button.style.border = '1px solid black';
     button.style.margin = '20px';
     button.style.padding = '0 20px';
-
     form.appendChild(button);
   }
 }
