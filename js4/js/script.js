@@ -138,3 +138,4 @@ function timerStop() {
         ol.removeChild(ol.lastChild);
     }
 }
+
