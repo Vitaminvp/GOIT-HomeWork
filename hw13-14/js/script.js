@@ -75,6 +75,7 @@ btnAnsw.addEventListener("click", function(){
     if(text == "") text = "<li>Нужно ответить!</li>";
     text = "<h1>Результаты теста</h1> <ul>" +  text +"</ul>";
     for(let i=0; i<yourAnsw.length; i++){
+        if(isNaN(yourAnsw[i])) yourAnsw[i] = 0;
         score = score + yourAnsw[i];
     }
     var persent = score/testToObj.length;
