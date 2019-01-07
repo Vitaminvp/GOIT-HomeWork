@@ -1,2 +1,5 @@
-# home_work
-Для домашних работ.
+###HTML/CSS + JAVASCRIPT
+
+# Home Work
+
+[Home work #1](hw1/)
